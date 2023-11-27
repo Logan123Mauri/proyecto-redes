@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <style>
+  #Opciones {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    padding: 10px;
+    flex-direction: column; /* Muestra las opciones en columna */
+}
+
+#menuBtn {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#Opciones a {
+    display: block;
+    padding: 10px;  /* Agregado para proporcionar un espacio adecuado alrededor del enlace */
+    color: white; /* Color del texto del menú */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Opciones a:hover {
+    color: rgb(237, 118, 108);
+}
+.fondo-opaco {
+        background-color: rgba(13, 9, 9, 0.57);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        display: none;
+        pointer-events: none;
+    }
+
+    #Opciones.abierto {
+       color: white;
+        pointer-events: auto; /* Habilita eventos de puntero para el menú abierto */
+    }
+
+    #Opciones a {
+      
+        font-size: 2.5rem; /* Cambia el tamaño de la fuente según tus preferencias */
+    }
+    #menuBtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 24px; /* Tamaño de fuente ajustado */
+        background: none;
+        border: none;
+        color: white;
+        outline: none;
+        transition: color 0.3s;
+      
+    }
+
+    #menuBtn:hover {
+        color: rgb(237, 118, 108);
+    }
+
+    #menuBtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 24px;
+        background: none;
+        border: none;
+        outline: none;
+        transition: transform 0.3s; /* Agregamos una animación de transición */
+    }
+
+    #menuBtn:hover {
+        transform: scale(1.1); /* Efecto de escala al hacer hover */
+    }
+
+    /* Estilo para la hamburguesa */
+    .bar {
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin: 6px 0;
+        transition: background-color 0.3s;
+    }
+
+    /* Cambiar color de las líneas al hacer hover */
+    #menuBtn:hover .bar {
+        background-color: rgb(237, 118, 108);
+    }  
+    
+          </style>
+    <link rel="stylesheet" href="css/proyecto web.css">
+    
+</head>
+<body>
+    <div class="fondo-opaco" id="fondoOpaco"></div> 
+    <header>
+        <div id="Cabecera">
+            <img src="tarea/logo.jpg" alt="">
+            <div id="IconoHamburguesa">&#9776;</div>
+            <button id="menuBtn" class="hamburguesa">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </button>
+
+            <div id="Opciones">
+                <a href="#">INICIO</a>
+                <a href="#">ACERCA DE</a>
+                <a href="#">INICIA SESION</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACTANOS</a>
+                <a href="#">NOSOTROS</a>
+            </div>
+            
+        </div>
+        
+    </header>
+    <header>
+        <div class="Banner">
+            <img src="tarea/banner2.jpg" alt="">
+            <div class="Texto">
+                <h1>Mp3<br>
+                    <span class="Perfect">La musica perfecta</span>
+                    <br>Welcome To The Music
+                </h1>
+                <p>Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felis lacinia nec et est
+                    <br> aptent taciti sociosqu ad litora torquent per conubia nostra
+                </p>
+            </div>
+        </div>
+
+        <div id="contenedor">
+            <div class="caja">
+                <img src="tarea/icon1.png" alt="">
+                <div class="texto">
+                    <h3>MUSICA</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed, placeat magni eligendi quia nisi suscipit minus recusandae maiores</p>
+                </div>
+            </div>
+            <div class="caja">
+                <img src="tarea/icon2.png" alt="">
+                <div class="texto">
+                    <h3>FACIL DE PERSONALIZAR</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed, placeat magni eligendi quia nisi suscipit</p>
+                </div>
+            </div>
+            <div class="caja">
+                <img src="tarea/icon3.png" alt="">
+                <div class="texto">
+                    <h3>LISTA DE MUSICA</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed, placeat magni eligendi quia nisi</p>
+                </div>
+            </div>
+        </div>    
+        <div id="txt">
+            <h5>ÚLTIMAS NOTICIAS</h5>
+            <p>un hecho establecido desde hace mucho tiempo que un lector se distraerá con lo legible
+                contenido de una página cuando se mira su diseño. El punto de usar Lorem</p>
+        </div>
+
+        <div id="nuevocontenedor">
+            <div class="conten1 ">
+                <img src="tarea/1.jpg" alt="" />
+                <h3>Live With Music</h3>
+                <span> March 20</span><span>Comment</span>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, </p>
+            </div>
+            <div class="conten2">
+                <img src="tarea/2.jpg" alt="" />
+                <h3>Live With Music</h3>
+                <span> March 20</span><span>Comment</span>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, </p>
+            </div>
+            <div class="conten3">
+                <img src="tarea/3.jpg" alt="" />
+                <h3>Live With Music</h3>
+                <span> March 20</span><span>Comment</span>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, </p>
+            </div>
+            <div class="conten4">
+                <img src="tarea/1.jpg" alt="" />
+                <h3>Live With Music</h3>
+                <span> March 20</span><span>Comment</span>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, </p>
+            </div>
+        </div>
+        
+        <div id="final">
+            
+          <main>
+                  <h2>NUEVO MIEMBRO, INSCRIBASE....</h2>
+                 <form action="" class="formulario" id="formulario">
+                   <!-- Grupo: Usuario -->
+                 <div class="formulario__grupo" id="grupo__usuario">
+                    <label for="usuario" class="formulario__label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" >
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+    
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" >
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+    
+                <!-- Grupo: Contraseña -->
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                </div>
+    
+                <!-- Grupo: Contraseña 2 -->
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password2" id="password2">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                </div>
+    
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="prueba@gmail.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
+    
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" >
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                </div>
+    
+                <!-- Grupo: Terminos y Condiciones -->
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Terminos y Condiciones
+                    </label>
+                </div>
+    
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+              </form>
+                </main>
+            </div>
+            <div id="contactos">
+                <h6>Contactenos</h6>
+                <ul class="iconos">
+                    <p><img src="tarea/1.png" alt="" /> 104 La Paz, Bolivia</p>
+                    <p><img src="tarea/2.png" alt="" /> Telefono : (+591 67716547)</p>
+                    <p><img src="tarea/3.png" alt="" /> Email : prueba@email.com</p>
+                </ul>
+                <ul class="contac">
+                    <img src="tarea/fb.png" alt="" />
+                    <img src="tarea/tw.png" alt="" />
+                    <img src="tarea/instagram.png" alt="" />
+                    <img src="tarea/lin(2).png" alt="" />
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Todos los derechos reservados. </p>
+            </div>
+        
+        
+
+              <script>
+      var menuBtn = document.getElementById('menuBtn');
+    var opciones = document.getElementById('Opciones');
+    var fondoOpaco = document.getElementById('fondoOpaco');
+
+    menuBtn.addEventListener('click', function() {
+        if (opciones.style.display === 'flex') {
+            opciones.style.display = 'none';
+            fondoOpaco.style.display = 'none';
+            opciones.classList.remove('abierto');
+        } else {
+            opciones.style.display = 'flex';
+            fondoOpaco.style.display = 'block';
+            opciones.classList.add('abierto');
+        }
+    });
+
+    fondoOpaco.addEventListener('click', function() {
+        opciones.style.display = 'none';
+        fondoOpaco.style.display = 'none';
+        opciones.classList.remove('abierto');
+    });
+         </script>
+        <script src="js/formulario.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
